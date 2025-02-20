@@ -3,7 +3,7 @@ import Underline from "../assets/underline.svg";
 
 export const Home = () => {
   return (
-    <div className="Home">
+    <div className="home">
       <p>Shafin Ahmed</p>
       <img src={Underline} alt="Underline" />
     </div>
