@@ -1,13 +1,10 @@
 import "./App.css";
-import Underline from "./assets/underline.svg";
+import { Home } from "./components/Home";
 
 function App() {
   return (
     <>
-      <div className="Home">
-        <p>Shafin Ahmed</p>
-        <img src={Underline} alt="Underline" />
-      </div>
+      <Home />
     </>
   );
 }
