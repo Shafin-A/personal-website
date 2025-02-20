@@ -27,6 +27,13 @@
     gap: 2rem;
 }
 
+@media screen and (max-width: 800px) {
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
 .about-text p {
     font-size: 1.25rem;
     font-family: sans-serif;
@@ -79,4 +86,11 @@
     width: 80%;
     margin: auto;
     border-radius: 100vw 100vw 0px 0px;
+}
+
+@media screen and (max-width: 800px) {
+    .about-image {
+        display: none;
+    }
+
 }
