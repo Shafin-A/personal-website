@@ -1,0 +1,39 @@
+@font-face {
+  font-family: 'Boiling';
+  src: url('./assets/Boiling.ttf') format('truetype');
+}
+
+.Home {
+  height: 100vh;
+  max-width: 100vw;
+  background-color: rgb(18, 55, 42);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(251, 250, 218);
+  font-family: 'Boiling';
+}
+
+.Home p {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.Home img {
+  width: 30%;
+  height: auto;
+  position: relative;
+  clip-path: polygon(0 0, 0 100%, 0% 100%, 0% 0);
+  animation: revealFromLeft 1s forwards;
+}
+
+@keyframes revealFromLeft {
+  0% {
+    clip-path: polygon(0 0, 0 100%, 0% 100%, 0% 0);
+  }
+
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+}
