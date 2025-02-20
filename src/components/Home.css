@@ -13,6 +13,7 @@
     align-items: center;
     color: rgb(251, 250, 218);
     font-family: 'Boiling';
+    position: relative;
 }
 
 .home p {
@@ -20,13 +21,13 @@
     margin: 0;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .home p {
         font-size: 3rem;
     }
 }
 
-.home img {
+.underline {
     width: 30%;
     height: auto;
     position: relative;
@@ -35,9 +36,35 @@
     transform: rotate(10deg);
 }
 
-@media (max-width: 500px) {
-    .home img {
+@media screen and (max-width: 500px) {
+    .underline {
         width: 60%;
+    }
+}
+
+.down-arrow-container {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.down-arrow {
+    width: 5%;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    animation: revealFromTop 1s forwards 1s;
+}
+
+@media screen and (max-width: 1000px) {
+    .down-arrow {
+        width: 8%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .down-arrow {
+        width: 10%;
     }
 }
 
@@ -48,5 +75,15 @@
 
     100% {
         clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+    }
+}
+
+@keyframes revealFromTop {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
 }
