@@ -1,0 +1,77 @@
+.resume {
+    padding: 2rem;
+}
+
+.resume h1 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: fantasy;
+    color: rgb(3, 54, 5);
+}
+
+.resume-content {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.resume-content p {
+    font-size: 1.25rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: rgb(3, 54, 5);
+}
+
+
+.resume-container {
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+}
+
+.resume-container details {
+    font-family: sans-serif;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+details[open] {
+    max-height: 800px;
+}
+
+details:not([open]) {
+    max-height: 42px;
+}
+
+.resume-container summary {
+    background-color: rgb(3, 54, 5);
+    color: rgb(251, 250, 218);
+    font-weight: bold;
+    padding: 12px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: margin 150ms ease-out;
+}
+
+details>summary {
+    list-style: none;
+}
+
+details>summary::marker,
+/* Latest Chrome, Edge, Firefox */
+details>summary::-webkit-details-marker {
+    /* Safari */
+    display: none;
+}
+
+.resume-container iframe {
+    border: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    .resume-content p:nth-child(2),
+    .resume-container {
+        display: none;
+    }
+}
