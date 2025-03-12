@@ -1,0 +1,33 @@
+details {
+    font-family: sans-serif;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+}
+
+details[open] {
+    max-height: 800px;
+}
+
+details:not([open]) {
+    max-height: 42px;
+}
+
+summary {
+    background-color: rgb(3, 54, 5);
+    color: rgb(251, 250, 218);
+    font-weight: bold;
+    padding: 12px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: margin 150ms ease-out;
+}
+
+details>summary {
+    list-style: none;
+}
+
+details>summary::marker,
+details>summary::-webkit-details-marker {
+    display: none;
+}
