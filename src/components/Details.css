@@ -37,3 +37,11 @@ details>summary::marker,
 details>summary::-webkit-details-marker {
     display: none;
 }
+
+@media screen and (max-width: 800px) {
+    details {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+}
