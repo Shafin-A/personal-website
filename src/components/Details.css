@@ -30,3 +30,12 @@ details>summary::marker,
 details>summary::-webkit-details-marker {
     display: none;
 }
+
+.details-children {
+    padding: 0 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}

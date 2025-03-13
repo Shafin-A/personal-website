@@ -10,7 +10,7 @@ export const Details: React.FC<DetailsProps> = ({ summary, children }) => {
   return (
     <details>
       <summary>{summary}</summary>
-      {children}
+      <div className="details-children">{children}</div>
     </details>
   );
 };
