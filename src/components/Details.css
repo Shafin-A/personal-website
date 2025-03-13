@@ -3,10 +3,17 @@ details {
     overflow: hidden;
     transition: max-height 0.5s ease-out;
     box-shadow: 0 2px 5px rgb(0, 0, 0);
+
+    flex: 1;
+    min-width: 45%;
+    max-width: 48%;
+
+    display: flex;
+    flex-direction: column;
 }
 
 details[open] {
-    max-height: 800px;
+    max-height: 1200px;
 }
 
 details:not([open]) {
@@ -29,13 +36,4 @@ details>summary {
 details>summary::marker,
 details>summary::-webkit-details-marker {
     display: none;
-}
-
-.details-children {
-    padding: 0 15px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
-    gap: 1rem;
 }
