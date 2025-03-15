@@ -6,7 +6,7 @@ import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import { Socials } from "./components/Socials";
 
-function App() {
+const App = () => {
   return (
     <>
       <Home />
@@ -17,6 +17,6 @@ function App() {
       <Socials />
     </>
   );
-}
+};
 
 export default App;
