@@ -43,7 +43,7 @@ To start the development server, run:
 npm run dev
 ```
 
-Open your browser and go to `http://localhost:5174` to view the website.
+Open your browser and go to `http://localhost:5173` to view the website.
 
 ## Contributing
 
